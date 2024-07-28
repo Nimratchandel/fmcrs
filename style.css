@@ -1,0 +1,108 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0); /* Gradient background for a warm feel */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Form wrapper styling */
+.form_wrapper {
+    background: rgba(255, 255, 255, 0.9); /* White background with transparency */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    max-width: 400px; /* Maximum width for the form */
+    padding: 20px; /* Padding inside the form */
+}
+
+/* Title container styling */
+.title_container {
+    text-align: center; /* Center align the title */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.title_container h1 {
+    font-size: 24px; /* Font size for the heading */
+    color: #333; /* Dark color for the heading */
+}
+
+/* Input field styling */
+.input_field {
+    margin-bottom: 15px; /* Space below each input field */
+    position: relative; /* Position context for the icon */
+}
+
+.input_field span {
+    position: absolute; /* Position the icon absolutely */
+    left: 10px; /* Left alignment */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+    color: #888; /* Icon color */
+}
+
+.input_field input {
+    width: 100%; /* Full width */
+    padding: 10px 40px; /* Padding with space for the icon */
+    border: 2px solid #ccc; /* Border style */
+    border-radius: 5px; /* Rounded corners */
+    outline: none; /* Remove outline */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.input_field input:focus {
+    border-color: #ff6f61; /* Change border color on focus */
+}
+
+/* Select option styling */
+.select_option {
+    width: 100%; /* Full width */
+}
+
+.select_option select {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding */
+    border: 2px solid #ccc; /* Border style */
+    border-radius: 5px; /* Rounded corners */
+    background: #fff; /* White background */
+    cursor: pointer; /* Pointer on hover */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.select_option select:focus {
+    border-color: #ff6f61; /* Change border color on focus */
+}
+
+/* Button styling */
+.button {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: #ff6f61; /* Button background color */
+    color: #fff; /* Button text color */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer on hover */
+    transition: background 0.3s; /* Smooth transition for background */
+}
+
+.button:hover {
+    background: #ff4d4d; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .form_wrapper {
+        padding: 15px; /* Reduce padding on small devices */
+        max-width: 90%; /* Allow form to take more width */
+    }
+}
