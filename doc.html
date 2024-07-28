@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" /> 
+    <title>EVENT REGISTRATION FORM</title>
+</head>
+<body>
+    <div class="form_wrapper">
+        <div class="form_container">
+            <div class="title_container">
+                <h1>EVENT REGISTRATION FORM</h1>
+                <img src="fm.png" height="200" alt="FM Logo" />
+            </div>
+            <div class="form_content">
+                <form id="recruitmentForm">
+                    <div class="input_field">
+                        <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                        <input type="text" name="name" placeholder="Enter Name" required />
+                    </div>
+                    <div class="input_field">
+                        <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                        <input type="email" name="email" placeholder="Enter Email" required />
+                    </div>
+                    <div class="input_field select_option">
+                        <select name="branch" required>
+                            <option value="">Select your branch</option>
+                            <option>Computer Science</option>
+                            <option>Information Technology</option>
+                            <option>Mechanical</option>
+                            <option>Civil</option>
+                            <option>Electrical</option>
+                            <option>Electronics and Communication</option>
+                            <option>Business Administration</option>
+                            <option>Computer Applications</option>
+                            <option>Architecture</option>
+                            <option>Logistics & Chain Supply Management</option>
+                        </select>
+                    </div>
+                    <div class="input_field select_option">
+                        <select name="year" required>
+                            <option value="">Select your year</option>
+                            <option>First Year</option>
+                            <option>Second Year</option>
+                            <option>Third Year</option>
+                            <option>Fourth Year</option>
+                        </select>
+                    </div>
+                    <div class="input_field select_option">
+                        <select name="team" required>
+                            <option value="">Select your event</option>
+                            <option>Radio Jockey Team</option>
+                            <option>Event Management Team</option>
+                            <option>Technical Team</option>
+                        </select>
+                    </div>
+                    <input class="button" type="submit" value="Submit" />
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
